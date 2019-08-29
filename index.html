@@ -9,11 +9,26 @@
             <p id="description">Let us know how we can improve freeCodeCamp</p>
             <form id="survey-form">
                 <label id="name-label" for="name">Name:</label>
-                <input type="text" id="name">
+                <input type="text" id="name" placeholder="Enter your name">
                 <label id="email-label" for="email">Email:</label>
-                <input  type="email" id="email">
+                <input  type="email" id="email" placeholder="Enter your email">
                 <label id="number-label" for="age">Age:</label>
-                <input type="number" id="number">                
+                <input type="number" id="number" min=1 max=100 placeholder="Age">
+                <label id="dropdown">Which option best describes your current role?</label>
+                <select>
+                    <option default >Select an Option</option>
+                    <option value="student">Student</option>
+                    <option value="fulltime-job">Full Time Job</option>
+                    <option value="fulltime-learner">Full Time Learner</option>
+                    <option value="not-to-say">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+                <label>* How likely is that you would recommend freeCodeCamp to a friend?</label>
+                <select type="radio">
+                    <option value="definitely">Definitely</option>
+                    <option value="maybe">Maybe</option>
+                    <option value="not-sure">Not Sure</option>
+                </select>
             </form>
         </div>
     </body>
