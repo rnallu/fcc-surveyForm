@@ -6,16 +6,17 @@
     </head>
     <body>
         <h1 id="title">Survey Form </h1>
-        <div class="content">
+        <div class="container">
             <p id="description">Let us know how we can improve freeCodeCamp</p>
             <form id="survey-form">
-                <label id="name-label" for="name">Name:</label>
-                <input type="text" id="name" placeholder="Enter your name" required>
-                <label id="email-label" for="email">Email:</label>
-                <input  type="email" id="email" placeholder="Enter your email" required>
-                <label id="number-label" for="age">Age:</label>
-                <input type="number" id="number" min=1 max=100 placeholder="Age" required>
-                <label id="dropdown">Which option best describes your current role?</label>
+                <div class="left-side"><label id="name-label" for="name">Name:</label></div>
+                <div class="right-side"><input type="text" id="name" placeholder="Enter your name" required></div>
+                <div class="left-side"><label id="email-label" for="email">Email:</label></div>
+                <div class="right-side"><input  type="email" id="email" placeholder="Enter your email" required></div>
+                <div class="left-side"><label id="number-label" for="age">Age:</label></div>
+                <div class="right-side"><input type="number" id="number" min=1 max=100 placeholder="Age" required></div>
+                <div class="left-side"><label id="dropdown">Which option best describes your current role?</label></div>
+                <div class="right-side">
                 <select>
                     <option default >Select an Option</option>
                     <option value="student">Student</option>
@@ -24,12 +25,17 @@
                     <option value="not-to-say">Prefer not to say</option>
                     <option value="other">Other</option>
                 </select>
+                </div>
+                <div class="left-side">
                 <label>* How likely is that you would recommend freeCodeCamp to a friend?</label>
-               
-                    <input type="radio" value="definitely" name="recommend">Definitely</input>
-                    <input type="radio" value="maybe" name="recommend">Maybe</input>
-                    <input type="radio" value="not-sure" name="recommend">Not Sure</input>
-                <label>* What do you do most in Fcc</label> 
+                </div>
+                <div class="right-side">
+                    <input type="radio" value="definitely" name="recommend"><label>Definitely</label>
+                    <input type="radio" value="maybe" name="recommend"><label>Maybe</label>
+                    <input type="radio" value="not-sure" name="recommend"><label>Not Sure</label>
+                </div>
+                <div class="left-side"><label>* What do you like most in Fcc</label> </div>
+                <div class="right-side">
                 <select name="" id="dropdown">
                     <option default>Select an option</option>
                     <option value="challenges">Challenges</option>
@@ -37,23 +43,31 @@
                     <option value="community">Community</option>
                     <option value="open-source">Open Source</option>
                 </select> 
+                </div>
+                <div class="left-side">
                 <label>Things that should be improved in the future
-                    (Check all that apply):</label> 
-                        <input type="checkbox" value="frontend-project"> <label for="">Front-end Projects</label>
-                        <input type="checkbox" value="backend-project"> <label for="">Back-end Projects</label>
-                        <input type="checkbox" value="data-visualizationt"><label for="">Data Visualization</label>
-                        <input type="checkbox" value="challenges"><label for="">Challenges</label>
-                        <input type="checkbox" value="open-sourceCommunity"> <label for="">Open Source Community</label>
-                        <input type="checkbox" value="Gitter-help-rooms"> <label for="">Gitter help rooms</label>
-                        <input type="checkbox" value="videos"> <label for="">videos</label>
-                        <input type="checkbox" value="city-meetUps"> <label for="">City MeetUps</label> 
-                        <input type="checkbox" value="wiki"> <label for="">wiki</label>
-                        <input type="checkbox" value="forum"> <label for="">Forum</label>
+                    (Check all that apply):</label> </div>
+                    <div class="right-side">
+                        <input type="checkbox" value="frontend-project"> <label for="">Front-end Projects</label><br>
+                        <input type="checkbox" value="backend-project"> <label for="">Back-end Projects</label><br>
+                        <input type="checkbox" value="data-visualizationt"><label for="">Data Visualization</label><br>
+                        <input type="checkbox" value="challenges"><label for="">Challenges</label><br>
+                        <input type="checkbox" value="open-sourceCommunity"> <label for="">Open Source Community</label><br>
+                        <input type="checkbox" value="Gitter-help-rooms"> <label for="">Gitter help rooms</label><br>
+                        <input type="checkbox" value="videos"> <label for="">videos</label><br>
+                        <input type="checkbox" value="city-meetUps"> <label for="">City MeetUps</label> <br>
+                        <input type="checkbox" value="wiki"> <label for="">wiki</label><br>
+                        <input type="checkbox" value="forum"> <label for="">Forum</label><br>
                         <input type="checkbox" value="additional-Courses"> <label for="">Additional Courses</label>
+                    </div>
+                    <div class="left-side">
                         <label for="">Any Comments or Suggestions?</label>
+                    </div>
+                    <div class="right-side">
                         <textarea name="" id="" cols="30" rows="10">
                             Enter your comments here..
                         </textarea>
+                    </div>
                         <input type="submit" name="Submit" id="submit">
             </form>
         </div>

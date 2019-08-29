@@ -1,17 +1,33 @@
 body {
     margin: 0 auto;
-    width: 100%;
-    display: flex;
-    -ms-flex-align: center;
-    background-color: blueviolet;
-}
-.content {
-    background-color: white;
-    -ms-flex-item-align: center;
-    align-items: center;
-    width:50%;
+    text-align: center;
+    background-color: aqua;
 }
 
-input {
-    display:block;
-}
+h1, #description {
+    text-align:center;
+  }
+  
+  .container {
+    padding: 10px 0 10px 0;
+    background-color:white;
+    max-width: 70%;
+    margin:auto;
+    background-color: beige;
+  }
+  
+  .left-side {
+    float: left;
+    width: 50%;
+    text-align:right;
+    padding-bottom:20px;
+  
+  }
+  
+  .right-side {
+    float:left;
+    width:46%;
+    margin-left:10px;
+    padding-bottom:20px;
+    text-align: left;
+  }
