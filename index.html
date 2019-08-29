@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>FCC Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <h1 id="title">Survey Form </h1>
@@ -9,11 +10,11 @@
             <p id="description">Let us know how we can improve freeCodeCamp</p>
             <form id="survey-form">
                 <label id="name-label" for="name">Name:</label>
-                <input type="text" id="name" placeholder="Enter your name">
+                <input type="text" id="name" placeholder="Enter your name" required>
                 <label id="email-label" for="email">Email:</label>
-                <input  type="email" id="email" placeholder="Enter your email">
+                <input  type="email" id="email" placeholder="Enter your email" required>
                 <label id="number-label" for="age">Age:</label>
-                <input type="number" id="number" min=1 max=100 placeholder="Age">
+                <input type="number" id="number" min=1 max=100 placeholder="Age" required>
                 <label id="dropdown">Which option best describes your current role?</label>
                 <select>
                     <option default >Select an Option</option>
@@ -24,12 +25,38 @@
                     <option value="other">Other</option>
                 </select>
                 <label>* How likely is that you would recommend freeCodeCamp to a friend?</label>
-                <select type="radio">
-                    <option value="definitely">Definitely</option>
-                    <option value="maybe">Maybe</option>
-                    <option value="not-sure">Not Sure</option>
-                </select>
+               
+                    <input type="radio" value="definitely" name="recommend">Definitely</input>
+                    <input type="radio" value="maybe" name="recommend">Maybe</input>
+                    <input type="radio" value="not-sure" name="recommend">Not Sure</input>
+                <label>* What do you do most in Fcc</label> 
+                <select name="" id="dropdown">
+                    <option default>Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="project">Project</option>
+                    <option value="community">Community</option>
+                    <option value="open-source">Open Source</option>
+                </select> 
+                <label>Things that should be improved in the future
+                    (Check all that apply):</label> 
+                        <input type="checkbox" value="frontend-project"> <label for="">Front-end Projects</label>
+                        <input type="checkbox" value="backend-project"> <label for="">Back-end Projects</label>
+                        <input type="checkbox" value="data-visualizationt"><label for="">Data Visualization</label>
+                        <input type="checkbox" value="challenges"><label for="">Challenges</label>
+                        <input type="checkbox" value="open-sourceCommunity"> <label for="">Open Source Community</label>
+                        <input type="checkbox" value="Gitter-help-rooms"> <label for="">Gitter help rooms</label>
+                        <input type="checkbox" value="videos"> <label for="">videos</label>
+                        <input type="checkbox" value="city-meetUps"> <label for="">City MeetUps</label> 
+                        <input type="checkbox" value="wiki"> <label for="">wiki</label>
+                        <input type="checkbox" value="forum"> <label for="">Forum</label>
+                        <input type="checkbox" value="additional-Courses"> <label for="">Additional Courses</label>
+                        <label for="">Any Comments or Suggestions?</label>
+                        <textarea name="" id="" cols="30" rows="10">
+                            Enter your comments here..
+                        </textarea>
+                        <input type="submit" name="Submit" id="submit">
             </form>
         </div>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>
 </html>
