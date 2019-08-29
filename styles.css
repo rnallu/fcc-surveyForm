@@ -1,11 +1,17 @@
 body {
     margin: 0 auto;
     width: 100%;
-    text-align: center;
+    display: flex;
+    -ms-flex-align: center;
+    background-color: blueviolet;
+}
+.content {
+    background-color: white;
+    -ms-flex-item-align: center;
+    align-items: center;
+    width:50%;
 }
 
-input,label {
-    display: block;
-    float:right;
-    width: 60%;
+input {
+    display:block;
 }
